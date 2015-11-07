@@ -23,8 +23,16 @@ class Player: Character {
     }
     
     // Initialization
-    convenience init(name: String, hp: Int, attackPwr: Int) {
-        self.init(startingHp: hp, attackPwr: attackPwr)
+    override var alliance: String {
+        return "Hero"
+    }
+    convenience init(name: String, hp: Int, attackPwr: Int, type: String) {
+        self.init(
+            startingHp: hp,
+            attackPwr: attackPwr,
+            alliance: "Hero",
+            type: type
+        ) 
         self._name = name
     }
     

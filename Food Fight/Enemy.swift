@@ -10,11 +10,27 @@ import Foundation
 
 class Enemy: Character {
     
+    // Initialization
+    convenience init(hp: Int, attackPwr: Int, type: String) {
+        self.init(
+            startingHp: hp,
+            attackPwr: attackPwr,
+            alliance: "Villian",
+            type: type
+        )
+    }
+    
+    // Loot Logic
     var loot: [String] {
         return ["Cooking Oil", "Seasoning Salt"]
     }
-    
-    var type: String {
-        return "Scraps"
+    func dropLoot() -> String? {
+        if !isAlive {
+            let randomDrop = Int(arc4random_uniform(UInt32(loot.count)))
+            return loot[randomDrop]
+        } else {
+            return nil
+        }
+        
     }
 }

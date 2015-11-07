@@ -14,8 +14,9 @@
 		7C2CC6931BEB1C850032B639 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C2CC6911BEB1C850032B639 /* LaunchScreen.storyboard */; };
 		7C2CC69B1BEC14F70032B639 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2CC69A1BEC14F70032B639 /* Character.swift */; };
 		7C2CC69D1BEC1E420032B639 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2CC69C1BEC1E420032B639 /* Player.swift */; };
-		7C2CC69F1BEC22D20032B639 /* Fruits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2CC69E1BEC22D20032B639 /* Fruits.swift */; };
+		7C2CC69F1BEC22D20032B639 /* Fruit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2CC69E1BEC22D20032B639 /* Fruit.swift */; };
 		7C2CC6A11BEC23F20032B639 /* Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2CC6A01BEC23F20032B639 /* Enemy.swift */; };
+		7C2CC6A71BED7C1B0032B639 /* OutrageousOrange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2CC6A61BED7C1B0032B639 /* OutrageousOrange.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,8 +29,9 @@
 		7C2CC6941BEB1C850032B639 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C2CC69A1BEC14F70032B639 /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		7C2CC69C1BEC1E420032B639 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
-		7C2CC69E1BEC22D20032B639 /* Fruits.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fruits.swift; sourceTree = "<group>"; };
+		7C2CC69E1BEC22D20032B639 /* Fruit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fruit.swift; sourceTree = "<group>"; };
 		7C2CC6A01BEC23F20032B639 /* Enemy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
+		7C2CC6A61BED7C1B0032B639 /* OutrageousOrange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutrageousOrange.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +68,8 @@
 				7C2CC68A1BEB1C850032B639 /* ViewController.swift */,
 				7C2CC69A1BEC14F70032B639 /* Character.swift */,
 				7C2CC69C1BEC1E420032B639 /* Player.swift */,
-				7C2CC69E1BEC22D20032B639 /* Fruits.swift */,
+				7C2CC69E1BEC22D20032B639 /* Fruit.swift */,
+				7C2CC6A61BED7C1B0032B639 /* OutrageousOrange.swift */,
 				7C2CC6A01BEC23F20032B639 /* Enemy.swift */,
 				7C2CC68C1BEB1C850032B639 /* Main.storyboard */,
 				7C2CC68F1BEB1C850032B639 /* Assets.xcassets */,
@@ -147,8 +150,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C2CC69F1BEC22D20032B639 /* Fruits.swift in Sources */,
+				7C2CC69F1BEC22D20032B639 /* Fruit.swift in Sources */,
 				7C2CC69D1BEC1E420032B639 /* Player.swift in Sources */,
+				7C2CC6A71BED7C1B0032B639 /* OutrageousOrange.swift in Sources */,
 				7C2CC6A11BEC23F20032B639 /* Enemy.swift in Sources */,
 				7C2CC69B1BEC14F70032B639 /* Character.swift in Sources */,
 				7C2CC68B1BEB1C850032B639 /* ViewController.swift in Sources */,

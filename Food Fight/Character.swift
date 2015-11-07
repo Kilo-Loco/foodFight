@@ -13,23 +13,31 @@ class Character {
     // Encapsulated variables
     private var _hp: Int = 100
     private var _attackPwr: Int = 10
-    
+    private var _alliance: String
+    private var _type: String
     
     // Variable getters & setters
     var hp: Int {
-        get {return self._hp}
+        get { return self._hp }
     }
     var attackPwr: Int {
-        get {return self._attackPwr}
+        get { return self._attackPwr }
+    }
+    var alliance: String {
+        get { return self._alliance }
+    }
+    var type: String {
+        get { return self._type }
     }
     
     
     // Initializers
-    init(startingHp: Int, attackPwr: Int) {
+    init(startingHp: Int, attackPwr: Int, alliance: String, type: String) {
         self._hp = startingHp
         self._attackPwr = attackPwr
+        self._alliance = alliance
+        self._type = type
     }
-    init() {}
     
     
     var isAlive: Bool {
