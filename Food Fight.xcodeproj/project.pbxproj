@@ -32,6 +32,7 @@
 		7C2CC69E1BEC22D20032B639 /* Fruit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fruit.swift; sourceTree = "<group>"; };
 		7C2CC6A01BEC23F20032B639 /* Enemy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
 		7C2CC6A61BED7C1B0032B639 /* OutrageousOrange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutrageousOrange.swift; sourceTree = "<group>"; };
+		7C48FF951BEDFA3D00665880 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +70,7 @@
 				7C2CC69A1BEC14F70032B639 /* Character.swift */,
 				7C2CC69C1BEC1E420032B639 /* Player.swift */,
 				7C2CC69E1BEC22D20032B639 /* Fruit.swift */,
+				7C48FF951BEDFA3D00665880 /* MyPlayground.playground */,
 				7C2CC6A61BED7C1B0032B639 /* OutrageousOrange.swift */,
 				7C2CC6A01BEC23F20032B639 /* Enemy.swift */,
 				7C2CC68C1BEB1C850032B639 /* Main.storyboard */,
@@ -304,6 +306,7 @@
 				7C2CC6991BEB1C850032B639 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

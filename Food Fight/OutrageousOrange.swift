@@ -11,6 +11,10 @@ import Foundation
 class OutrageousOrange: Fruit {
     
     // Loot Logic
+//    override var loot: [String] {
+//        return loot.append("hello")
+//    }
+    
     
     
 }

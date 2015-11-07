@@ -10,6 +10,8 @@ import Foundation
 
 class Enemy: Character {
     
+    private var _loot: [String] = ["Cooking Oil", "Seasoning Salt"]
+    
     // Initialization
     convenience init(hp: Int, attackPwr: Int, type: String) {
         self.init(
@@ -22,8 +24,13 @@ class Enemy: Character {
     
     // Loot Logic
     var loot: [String] {
-        return ["Cooking Oil", "Seasoning Salt"]
+        get{ return self._loot }
+        set{ if newValue.count > 0{
+            _loot += newValue
+            }}
     }
+    
+    
     func dropLoot() -> String? {
         if !isAlive {
             let randomDrop = Int(arc4random_uniform(UInt32(loot.count)))
@@ -31,6 +38,10 @@ class Enemy: Character {
         } else {
             return nil
         }
-        
     }
+    func combineLoot(newLoot: [String], oldLoot: [String]) -> [String] {
+        let combinedLoot: [String] = newLoot + oldLoot
+        return combinedLoot
+    }
+    
 }

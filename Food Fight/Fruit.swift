@@ -14,12 +14,10 @@ class Fruit: Enemy {
     override var type: String {
         return "Fruit"
     }
-    
+
     // Loot Logic
-    override var loot: [String] {
-        return ["Golden Seeds", "Sweet Juice", "Nutritious Core"]
-    }
-    
+    var fruitLoot: [String] = ["Golden Seeds", "Sweet Juice", "Nutritious Core"]
+
     // Unique Abilities
     let immunity = 15
     override func attemptAttack(attackPwr: Int) -> Bool {

@@ -13,8 +13,8 @@ class Character {
     // Encapsulated variables
     private var _hp: Int = 100
     private var _attackPwr: Int = 10
-    private var _alliance: String
-    private var _type: String
+    private var _alliance: String = "Mercenary"
+    private var _type: String = "Spoiled Food"
     
     // Variable getters & setters
     var hp: Int {
@@ -38,6 +38,7 @@ class Character {
         self._alliance = alliance
         self._type = type
     }
+    init() {}
     
     
     var isAlive: Bool {
