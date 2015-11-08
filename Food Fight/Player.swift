@@ -22,10 +22,11 @@ class Player: Character {
         get {return self._inventory}
     }
     
-    // Initialization
-    override var alliance: String {
-        return "Hero"
+    func addToInventory(item: String) {
+        self._inventory.append(item)
     }
+    
+    // Initialization
     convenience init(name: String, hp: Int, attackPwr: Int, type: String) {
         self.init(
             startingHp: hp,

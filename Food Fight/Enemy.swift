@@ -25,23 +25,15 @@ class Enemy: Character {
     // Loot Logic
     var loot: [String] {
         get{ return self._loot }
-        set{ if newValue.count > 0{
-            _loot += newValue
-            }}
     }
-    
     
     func dropLoot() -> String? {
         if !isAlive {
             let randomDrop = Int(arc4random_uniform(UInt32(loot.count)))
-            return loot[randomDrop]
+            return self.loot[randomDrop]
         } else {
             return nil
         }
     }
-    func combineLoot(newLoot: [String], oldLoot: [String]) -> [String] {
-        let combinedLoot: [String] = newLoot + oldLoot
-        return combinedLoot
-    }
-    
+
 }

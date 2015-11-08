@@ -43,7 +43,7 @@ class Character {
     
     var isAlive: Bool {
         get {
-            if hp <= 0 {
+            if self.hp <= 0 {
                 return false
             } else {
                 return true

@@ -11,12 +11,26 @@ import Foundation
 class Fruit: Enemy {
     
     // Initalization
-    override var type: String {
-        return "Fruit"
+    convenience init(hp: Int, attackPwr: Int) {
+        self.init(
+            hp: hp,
+            attackPwr: attackPwr,
+            type: "Fruit"
+        )
     }
 
     // Loot Logic
-    var fruitLoot: [String] = ["Golden Seeds", "Sweet Juice", "Nutritious Core"]
+    var uniqueLoot = ["Golden Seeds", "Sweet Juice", "Nutritious Core"]
+
+    override func dropLoot() -> String? {
+        if !isAlive {
+            let rand = Int(arc4random_uniform(UInt32(super.loot.count + self.uniqueLoot.count)))
+            let combinedLoot: [String] = super.loot + self.uniqueLoot
+            return combinedLoot[rand]
+        } else {
+            return nil
+        }
+    }
 
     // Unique Abilities
     let immunity = 15
