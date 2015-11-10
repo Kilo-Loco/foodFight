@@ -18,6 +18,11 @@
 		7C2CC6A11BEC23F20032B639 /* Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2CC6A01BEC23F20032B639 /* Enemy.swift */; };
 		7C2CC6A71BED7C1B0032B639 /* OutrageousOrange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2CC6A61BED7C1B0032B639 /* OutrageousOrange.swift */; };
 		7C48FF971BEF0E2E00665880 /* Vegetable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C48FF961BEF0E2E00665880 /* Vegetable.swift */; };
+		7C5CA5371BF1DAB1009469AC /* Meat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5CA5361BF1DAB1009469AC /* Meat.swift */; };
+		7C5CA5391BF1DAD1009469AC /* Dessert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5CA5381BF1DAD1009469AC /* Dessert.swift */; };
+		7C5CA53B1BF1DAF4009469AC /* Poltry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5CA53A1BF1DAF4009469AC /* Poltry.swift */; };
+		7C5CA53D1BF1DB12009469AC /* Fish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5CA53C1BF1DB12009469AC /* Fish.swift */; };
+		7C5CA53F1BF1DB48009469AC /* Grain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5CA53E1BF1DB48009469AC /* Grain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +40,11 @@
 		7C2CC6A61BED7C1B0032B639 /* OutrageousOrange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutrageousOrange.swift; sourceTree = "<group>"; };
 		7C48FF951BEDFA3D00665880 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 		7C48FF961BEF0E2E00665880 /* Vegetable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vegetable.swift; sourceTree = "<group>"; };
+		7C5CA5361BF1DAB1009469AC /* Meat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meat.swift; sourceTree = "<group>"; };
+		7C5CA5381BF1DAD1009469AC /* Dessert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dessert.swift; sourceTree = "<group>"; };
+		7C5CA53A1BF1DAF4009469AC /* Poltry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Poltry.swift; sourceTree = "<group>"; };
+		7C5CA53C1BF1DB12009469AC /* Fish.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fish.swift; sourceTree = "<group>"; };
+		7C5CA53E1BF1DB48009469AC /* Grain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Grain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +79,11 @@
 			children = (
 				7C2CC6881BEB1C850032B639 /* AppDelegate.swift */,
 				7C2CC68A1BEB1C850032B639 /* ViewController.swift */,
+				7C5CA5361BF1DAB1009469AC /* Meat.swift */,
+				7C5CA5381BF1DAD1009469AC /* Dessert.swift */,
+				7C5CA53A1BF1DAF4009469AC /* Poltry.swift */,
+				7C5CA53C1BF1DB12009469AC /* Fish.swift */,
+				7C5CA53E1BF1DB48009469AC /* Grain.swift */,
 				7C2CC69A1BEC14F70032B639 /* Character.swift */,
 				7C2CC69C1BEC1E420032B639 /* Player.swift */,
 				7C2CC69E1BEC22D20032B639 /* Fruit.swift */,
@@ -155,10 +170,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C5CA5391BF1DAD1009469AC /* Dessert.swift in Sources */,
+				7C5CA53D1BF1DB12009469AC /* Fish.swift in Sources */,
+				7C5CA53F1BF1DB48009469AC /* Grain.swift in Sources */,
 				7C2CC69F1BEC22D20032B639 /* Fruit.swift in Sources */,
 				7C48FF971BEF0E2E00665880 /* Vegetable.swift in Sources */,
 				7C2CC69D1BEC1E420032B639 /* Player.swift in Sources */,
 				7C2CC6A71BED7C1B0032B639 /* OutrageousOrange.swift in Sources */,
+				7C5CA53B1BF1DAF4009469AC /* Poltry.swift in Sources */,
+				7C5CA5371BF1DAB1009469AC /* Meat.swift in Sources */,
 				7C2CC6A11BEC23F20032B639 /* Enemy.swift in Sources */,
 				7C2CC69B1BEC14F70032B639 /* Character.swift in Sources */,
 				7C2CC68B1BEB1C850032B639 /* ViewController.swift in Sources */,
