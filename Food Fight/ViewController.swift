@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    // Outlets
     @IBOutlet var printLabel: UILabel!
     @IBOutlet var playerHpLabel: UILabel!
     @IBOutlet var enemyHpLabel: UILabel!
@@ -21,11 +22,13 @@ class ViewController: UIViewController {
     var enemy: Enemy!
     var lootMessage: String?
     
+    
+    // Enemy Generation Logic
     func generateEnemy() {
         let rand: Int = Int(arc4random_uniform(2))
         
         if rand == 0 {
-            self.enemy = Fruit(hp: 70, attackPwr: 10)
+            self.enemy = OutrageousOrange(hp: 70, attackPwr: 10)
         } else {
             self.enemy = Vegetable(hp: 45, attackPwr: 30)
         }
@@ -33,9 +36,8 @@ class ViewController: UIViewController {
         self.enemyHpLabel.text = "\(enemy.hp) HP"
         self.orangeImage.hidden = false
         self.attackImage.enabled = true
-        
-        
     }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,6 +47,7 @@ class ViewController: UIViewController {
         self.generateEnemy()
     }
 
+    
     @IBAction func attackButton(sender: AnyObject) {
         if self.enemy.attemptAttack(self.player.attackPwr){
             self.printLabel.text = "Attacked \(self.enemy.type) for \(self.player.attackPwr) HP!"
